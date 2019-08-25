@@ -1,0 +1,14 @@
+{
+    "require": {
+        "m4tthumphrey/php-gitlab-api": "^9.0",
+        "php-http/guzzle6-adapter": "^1.1",
+        "vlucas/phpdotenv": "^3.4",
+        "ext-json": "*",
+        "ext-curl": "*"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "chmod 777 cache || true"
+        ]
+    }
+}

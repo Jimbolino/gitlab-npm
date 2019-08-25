@@ -1,0 +1,18 @@
+<?php
+
+use PhpCsFixer\Config;
+use Symfony\Component\Finder\Finder;
+
+$finder = Finder::create()
+    ->in(__DIR__)
+    ->name('*.php')
+    ->exclude('vendor')
+    ->ignoreDotFiles(true)
+    ->ignoreVCS(true);
+
+return Config::create()
+    ->setRules([
+        '@PSR2' => true,
+        'array_syntax' => ['syntax' => 'short'],
+    ])
+    ->setFinder($finder);

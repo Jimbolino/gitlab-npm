@@ -1,0 +1,6 @@
+/confs/static-repos.json
+/vendor
+/composer.lock
+/.idea
+/.php_cs.cache
+/.env
